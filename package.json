@@ -3,18 +3,26 @@
   "scripts": {
     "dev": "solid-start dev",
     "build": "solid-start build",
-    "start": "solid-start start"
+    "start": "solid-start start",
+    "postinstall": "node ./scripts/fix-jest-dom.mjs",
+    "test": "vitest run"
   },
   "type": "module",
   "devDependencies": {
-    "solid-app-router": "^0.4.1",
-    "solid-js": "^1.4.0",
-    "solid-meta": "^0.27.3",
+    "@testing-library/jest-dom": "latest",
+    "@types/testing-library__jest-dom": "latest",
+    "jsdom": "latest",
+    "solid-app-router": "latest",
+    "solid-js": "latest",
+    "solid-meta": "latest",
     "solid-start": "0.1.0-alpha.95",
     "solid-start-node": "0.1.0-alpha.95",
-    "typescript": "^4.4.3",
-    "undici": "^5.8.0",
-    "vite": "^3.0.2"
+    "solid-testing-library": "latest",
+    "typescript": "latest",
+    "undici": "latest",
+    "vite": "latest",
+    "vite-plugin-inspect": "latest",
+    "vitest": "latest"
   },
   "engines": {
     "node": ">=14"

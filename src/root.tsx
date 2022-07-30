@@ -1,6 +1,5 @@
 // @refresh reload
 import { Links, Meta, FileRoutes, Scripts } from 'solid-start/root';
-import { Routes } from 'solid-app-router';
 import { ErrorBoundary } from 'solid-start/error-boundary';
 import { Suspense } from 'solid-js';
 
@@ -16,9 +15,9 @@ export default function Root() {
       <body>
         <ErrorBoundary>
           <Suspense>
-            <Routes>
-              <FileRoutes />
-            </Routes>
+            <FileRoutes>
+              <Routes />
+            </FileRoutes>
           </Suspense>
         </ErrorBoundary>
         <Scripts />
