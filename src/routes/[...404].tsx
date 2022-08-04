@@ -1,15 +1,15 @@
-import Counter from "~/components/Counter";
-import { Link } from "solid-app-router";
+import Counter from '~/components/Counter';
+import { Link } from '@solidjs/router';
 
 export default function NotFound() {
   return (
     <main>
       <h1>Page Not Found</h1>
       <p>
-        Visit{" "}
-        <a href="https://solidjs.com" target="_blank">
+        Visit{' '}
+        <a href='https://solidjs.com' target='_blank'>
           solidjs.com
-        </a>{" "}
+        </a>{' '}
         to learn how to build Solid apps.
       </p>
     </main>
